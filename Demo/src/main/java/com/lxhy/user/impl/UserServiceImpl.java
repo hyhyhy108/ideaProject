@@ -12,7 +12,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
-    @Override
     public User getUserByUsername(String username) {
 
         User user = userMapper.selectUser1(username);
